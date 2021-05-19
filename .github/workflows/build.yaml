@@ -29,5 +29,4 @@ jobs:
       with:
         tags: |
           ${{ steps.docker_meta.outputs.tags }}
-          ${{ github.ref == 'refs/heads/master' && 'jojimail/azure-cli-k8s:latest' || '' }}
         push: true
